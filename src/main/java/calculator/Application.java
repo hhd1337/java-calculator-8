@@ -8,13 +8,14 @@ public class Application {
         System.out.println("덧셈할 문자열을 입력해 주세요.");
         final String input = Console.readLine();
 
-        // 입력 정규화 (리터럴 "\n"을 실제 개행으로 정규화)
+        // 입력 정규화 (리터럴 "\n"과 실제 개행입력 모두 처리 가능하도록)
         String normalizedInput = input.replace("\\n", "\n");
 
         try {
-            //TODO: InputValidator에 사용자가 입력한 문자열 유효성 검증 위임
+            // 사용자가 입력한 문자열 유효성 검증
+            InputValidator.validateOrThrow(normalizedInput);
 
-            // StringCalculator에 유효한 문자열 전달, 결과 반환받음
+            // 유효한 문자열 계산
             int result = StringCalculator.calculate(normalizedInput);
 
             // 결과 출력

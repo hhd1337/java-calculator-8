@@ -1,5 +1,7 @@
-package calculator;
+package calculator.validation;
 
+import calculator.parser.CustomSeparatorParser;
+import calculator.parser.ParsedParts;
 import java.util.regex.Pattern;
 
 /**

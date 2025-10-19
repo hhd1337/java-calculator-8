@@ -1,4 +1,7 @@
-package calculator;
+package calculator.core;
+
+import calculator.parser.CustomSeparatorParser;
+import calculator.parser.ParsedParts;
 
 /**
  * 문자열 덧셈 계산 전체의 흐름을 관리하는 클래스. 전제: 입력값의 유효성 검사는 InputValidator에서 완료된 상태다.

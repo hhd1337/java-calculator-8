@@ -1,5 +1,7 @@
-package calculator;
+package calculator.app;
 
+import calculator.core.StringCalculator;
+import calculator.validation.InputValidator;
 import camp.nextstep.edu.missionutils.Console;
 
 public class Application {

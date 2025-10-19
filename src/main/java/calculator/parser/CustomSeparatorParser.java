@@ -1,4 +1,4 @@
-package calculator;
+package calculator.parser;
 
 public final class CustomSeparatorParser {
     private CustomSeparatorParser() {

@@ -15,6 +15,10 @@ public final class InputValidator {
         if (input == null || input.isEmpty()) {
             return;
         }
+
+        //테스트용 코드. 입력 정규화 (리터럴 "\n"과 실제 개행입력 모두 처리 가능하도록)
+        input = input.replace("\\n", "\n");
+
         // 커스텀구분자 형식 검증
         if (input.startsWith("//")) {
             validateCustomForm(input);

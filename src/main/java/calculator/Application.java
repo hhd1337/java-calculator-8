@@ -1,4 +1,4 @@
-package calculator.app;
+package calculator;
 
 import calculator.core.StringCalculator;
 import calculator.validation.InputValidator;
